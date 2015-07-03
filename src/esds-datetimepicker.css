@@ -1,0 +1,63 @@
+.esds-datepicker-container {
+	position: fixed;
+	height: auto;
+	padding: 20px;
+	left: 0;
+	right: 0;
+	top: 50%;
+	margin-top: -150px;
+	display: inline-block;
+	background-color: #fdfdfd;
+	border-top: 3px solid #235379;
+	border-bottom: 3px solid #235379;
+	text-align: center;
+	height: 400px;
+}
+div.esds-overlay {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: white;
+	opacity: 0.7;
+}
+div.esds-datepicker,div.esds-timepicker {
+	display: inline-block;
+}
+div.esds-timepicker {
+	vertical-align: top;
+	margin-top: 75px;
+}
+div.esds-datepicker-object {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(255,255,255,.1);
+	position: fixed;
+	z-index: 100000;
+}
+div.esds-spacer {
+	display: inline-block;
+	width:50px;
+}
+div.esds-summary {
+	font-weight: bold;
+	font-size: 13pt;
+	height: 20px;
+	margin-bottom: 20px;
+}
+div.esds-datepicker-input-group {
+	position: relative;
+}
+div.esds-datepicker-input-group input {
+	float: left;
+}
+div.esds-delete-button {
+	color: grey;
+	position: absolute;
+	margin-left: -22px;
+	margin-top: 7px;
+	cursor: pointer;
+}
