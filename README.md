@@ -6,7 +6,15 @@ A modal AngularJS module for picking date and/or times
 
 ## Usage:
 
-'Datetimepicker:
+`esds-datepicker` (required): A unique identifier for the date/time-object
+`esds-model` (required): Use as `ng-model`  
+`esds-time` (optional): Set to `false` if time should be disabled (aka datepicker)
+`esds-date` (optional): Set to `false` if date should be disabled (aka timepicker)
+
+
+## Snippets:
+
+**Datetimepicker:**
 ```
 <input
 	type="text"
@@ -17,7 +25,7 @@ A modal AngularJS module for picking date and/or times
 	esds-model="myDate" />
 ```
 
-'Datepicker:
+**Datepicker:**
 ```
 <input
 	type="text"
@@ -28,7 +36,7 @@ A modal AngularJS module for picking date and/or times
 	esds-model="myDate" />
 ```
 
-'Timepicker:
+**Timepicker:**
 ```
 <input
 	type="text"
