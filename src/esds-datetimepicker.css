@@ -78,13 +78,13 @@ div.esds-delete-button {
 	border: none;
 	background: none;
 }
-.esds-datepicker-object tbody button:hover {
+.esds-datepicker-object [ng-switch-when="day"]  tbody button:hover {
 	width: 33px !important;
 	border-radius: 33px;
 	padding-left: 9px;
 	margin-left: 0;
 }
-.esds-datepicker-object tbody button:focus {
+.esds-datepicker-object [ng-switch-when="day"]  tbody button:focus {
 	outline: 0 !important;
 }
 .esds-datepicker-object table button {
@@ -92,10 +92,10 @@ div.esds-delete-button {
 	border: none;
 	padding: 7px 10px;
 }
-.esds-datepicker-object table button.btn-info * {
+.esds-datepicker-object [ng-switch-when="day"] table button.btn-info * {
 	color: white;
 }
-.esds-datepicker-object tbody button.btn-info {
+.esds-datepicker-object [ng-switch-when="day"] tbody button.btn-info {
 	width: 33px !important;
 	border-radius: 33px;
 	padding-left: 10px;
@@ -114,4 +114,28 @@ div.esds-delete-button {
 .esds-datepicker-object .pull-left:focus {
 	outline: none;
 	background: none;
+}
+.esds-datepicker-object .dialogBtn span {
+	color: white;
+	font-size: 14px;
+	font-weight: 200;
+	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5);
+	text-transform: none;
+	box-sizing: border-box;
+}
+
+.esds-datepicker-object .dialogBtn {
+	color: #fff;
+	display: inline-block;
+	border: 0;
+	border-radius: 0;
+	padding: 10px 30px;
+	cursor: pointer;
+	box-shadow: 0px 2px 3px 0px rgba(192, 192, 192, 0.4) !important;
+}
+.esds-datepicker-object .dialogBtn.saveBtn {
+	background-color: rgb(69, 139, 201) !important;
+}
+.esds-datepicker-object .dialogBtn.cancelBtn {
+	background-color: rgb(124, 44, 44) !important;
 }

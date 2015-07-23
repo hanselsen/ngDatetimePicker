@@ -103,16 +103,19 @@
 								var active = angular.element(this);
 								active.toggleClass('esds-active', true).blur();
 
+								$rootScope.esds['dateModel'] = new Date();
+								$rootScope.esds['timeModel'] = new Date();
+
 								$rootScope.esds.minDate = null;
 								if(active.attr('esds-mindate') != undefined) {
 									eval('var minDate = active.scope().' + active.attr('esds-mindate'));
 									$rootScope.esds.minDate = minDate;
+									$rootScope.esds['dateModel'] = minDate;
+									$rootScope.esds['timeModel'] = minDate;
 								}
 
 								eval('var date = active.scope().' + active.attr('esds-model'));
 
-								$rootScope.esds['dateModel'] = new Date();
-								$rootScope.esds['timeModel'] = new Date();
 								if(date != undefined && !isNaN(date.getTime())) {
 									$rootScope.esds['dateModel'] = date;
 									$rootScope.esds['timeModel'] = date;
