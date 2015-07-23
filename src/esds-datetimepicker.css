@@ -61,3 +61,57 @@ div.esds-delete-button {
 	margin-top: 7px;
 	cursor: pointer;
 }
+
+/*STYLING*/
+.esds-datepicker-object * {
+	box-shadow: none !important;
+}
+.esds-datepicker-object .esds-datepicker,
+.esds-datepicker-object .esds-timepicker {
+	background: white;
+}
+.esds-datepicker-object .esds-datepicker *,
+.esds-datepicker-object .esds-timepicker * {
+	text-shadow: none;
+}
+.esds-datepicker-object .esds-datepicker {
+	border: none;
+	background: none;
+}
+.esds-datepicker-object tbody button:hover {
+	width: 33px !important;
+	border-radius: 33px;
+	padding-left: 9px;
+	margin-left: 0;
+}
+.esds-datepicker-object tbody button:focus {
+	outline: 0 !important;
+}
+.esds-datepicker-object table button {
+	background: none;
+	border: none;
+	padding: 7px 10px;
+}
+.esds-datepicker-object table button.btn-info * {
+	color: white;
+}
+.esds-datepicker-object tbody button.btn-info {
+	width: 33px !important;
+	border-radius: 33px;
+	padding-left: 10px;
+	margin-left: 0;
+}
+.esds-datepicker-object .pull-right:hover,
+.esds-datepicker-object .pull-left:hover {
+	background: #e0e0e0 !important;
+}
+.esds-datepicker-object .pull-right:focus,
+.esds-datepicker-object .pull-left:focus {
+	outline: none;
+	background: none;
+}
+.esds-datepicker-object .pull-right:focus,
+.esds-datepicker-object .pull-left:focus {
+	outline: none;
+	background: none;
+}

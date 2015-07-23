@@ -1,4 +1,4 @@
-<div class="esds-datepicker-object hidden" ng-show="showEsdsDatepicker">
+<div class="esds-datepicker-object hidden">
 	<div class="esds-overlay"></div>
 	<div class='esds-datepicker-container'>
 		<div>
@@ -8,24 +8,26 @@
 				<span ng-show="esds.showTime">{{esds.timeModel|date:'HH:mm'}}</span>
 			</div>
 			<datepicker
-				ng-if="esds.showDate"
-				ng-model="esds.dateModel"
-				min-date="minDate"
-				show-weeks="true"
-				class="esds-datepicker well well-sm"
-				custom-class="getDayClass(date, mode)">
+					ng-if="esds.showDate"
+					ng-model="esds.dateModel"
+					min-date="esds.minDate"
+					min-date="minDate"
+					show-weeks="false"
+					starting-day="1"
+					class="esds-datepicker well well-sm"
+					custom-class="getDayClass(date, mode)">
 			</datepicker>
 			<div class="esds-spacer"></div>
 			<div class="esds-timepicker well well-sm" ng-if="esds.showTime">
 				<timepicker
-					ng-model="esds.timeModel"
-					show-meridian="false">
+						ng-model="esds.timeModel"
+						show-meridian="false">
 				</timepicker>
 			</div>
 		</div>
 		<div>
-			<div class="btn btn-default" ng-click="cancel()">Annuleren</div>
-			<div class="btn btn-primary" ng-click="save()">Opslaan</div>
+			<div class="btn btn-default" ng-click="esds.cancel()">Annuleren</div>
+			<div class="btn btn-primary" ng-click="esds.save()">Opslaan</div>
 		</div>
 	</div>
 </div>
